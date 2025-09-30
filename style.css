@@ -23,29 +23,12 @@ html {
 }
 
 body {
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
   overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
     position: relative;
-
-}
-
-body::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 6px; 
-  background: linear-gradient(to top, #ff4500, transparent);
-  filter: blur(12px) drop-shadow(0 -2px 8px #ff6347)
-          drop-shadow(0 -4px 16px #ff7f50);
-  pointer-events: none; 
-  z-index: 9999; 
-  animation: neon-flicker 2s infinite alternate;
-  opacity: 0.25;
 
 }
 
@@ -113,6 +96,9 @@ header > span {
     filter: drop-shadow(0 0 2px #ff4500) drop-shadow(0 0 5px #ff6347);
   }
 }
+
+
+
 
 .faded-div {
   position: relative;
@@ -199,7 +185,7 @@ article > div {
 }
 #services-wrapper {
   width: 100%;
-  background-color: #77c7c9;
+  background-color: #00aeff;
   display: flex;
   justify-content: center;
   padding-top: 2rem;
@@ -241,10 +227,10 @@ article > div {
   flex-shrink: 0;
 }
 
-.service-card:hover {
+/* .service-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .service-card div {
   font-weight: bold;
@@ -343,6 +329,9 @@ ul {
   display: flex;
   justify-content: center;
   background-color: #1d1d1d;
+  /* background-image: url('images/vibe.webp');
+  background-size: cover;     
+  background-position: right;  */
 }
 
 #splash-wrapper {
@@ -370,6 +359,7 @@ ul {
   width: auto;
   height: auto;
   display: block;
+
   filter: drop-shadow(0 0 5px #ff4500) drop-shadow(0 0 10px #ff4500)
     drop-shadow(0 0 20px #ff6347) drop-shadow(0 0 40px #ff7f50);
   animation: neon-flicker 2s infinite alternate;
@@ -401,6 +391,15 @@ ul {
   align-items: center;
   padding: 0;
   background-color: #1d1d1d;
+
+  cursor: pointer;
+}
+#vibe, #vibe > img {
+  width: 100%;
+}
+.link, button {
+    cursor: pointer;
+
 }
 #order {
   font-size: clamp(3rem, 8vw, 3rem);
@@ -408,7 +407,7 @@ ul {
   width: 100%;
   text-transform: uppercase;
   font-weight: 800;
-  color: #fffffe;
+  color: #00aeff;
   border: none;
   border-top: 1px solid #fffffe;
   padding: 1rem;
