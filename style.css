@@ -227,7 +227,6 @@ article > div {
   justify-content: center;
   text-align: center;
   padding: 0.5rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .service-card img {
@@ -239,10 +238,6 @@ article > div {
   flex-shrink: 0;
 }
 
-.service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-}
 
 .service-card div {
   font-weight: bold;
@@ -411,6 +406,7 @@ ul {
   /* border-top: 1px solid #fffffe; */
   padding: 1rem;
   background-color: #1d1d1d;
+  cursor: pointer;
 }
 
 @media (max-width: 899px) {
