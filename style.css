@@ -197,7 +197,7 @@ article > div {
 }
 #services-wrapper {
   width: 100%;
-  background-color: #77c7c9;
+  background-color: #1d1d1d;
   display: flex;
   justify-content: center;
   padding-top: 2rem;
@@ -218,9 +218,6 @@ article > div {
 }
 .service-card {
   flex: 1;
-  background: #fffffe;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,6 +233,8 @@ article > div {
   object-fit: contain;
   margin-bottom: 0.5rem;
   flex-shrink: 0;
+    filter: brightness(80) saturate(100%) invert(33%) sepia(91%) saturate(1686%) hue-rotate(140deg) brightness(95%) contrast(101%);
+ 
 }
 
 
@@ -243,6 +242,8 @@ article > div {
   font-weight: bold;
   font-size: 0.85rem;
   color: #1d1d1d;
+    color: #fff;
+
 }
 
 #info {
