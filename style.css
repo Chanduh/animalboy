@@ -77,13 +77,14 @@ header > span {
 
 
 #events {
+  margin-top: -30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
   justify-content: center;
   max-width: 1500px;
   align-self: center;
-  background-color: #fbe8fd;
+  background-color: #5799f9;
 }
 
 #events > img {
@@ -423,6 +424,7 @@ ul {
 
   #events {
     grid-template-columns: 1fr;
+    background-color: #5799f9;
   }
 }
 
