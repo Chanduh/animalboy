@@ -411,7 +411,23 @@ ul {
   cursor: pointer;
 }
 
+.mobile-image {
+  display: none;
+}
+
+.desktop-image {
+  display: block;
+}
+
 @media (max-width: 899px) {
+  .mobile-image {
+  display: block;
+}
+
+.desktop-image {
+  display: none;
+}
+
   #info {
     justify-content: flex-start;
   }
